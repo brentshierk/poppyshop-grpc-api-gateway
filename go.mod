@@ -5,6 +5,8 @@ go 1.17
 require (
 	github.com/gin-gonic/gin v1.7.7
 	github.com/spf13/viper v1.11.0
+	google.golang.org/grpc v1.45.0
+	google.golang.org/protobuf v1.28.0
 )
 
 require (
@@ -32,9 +34,10 @@ require (
 	github.com/subosito/gotenv v1.2.0 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
+	golang.org/x/net v0.0.0-20220412020605-290c469a71a5 // indirect
 	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect
 	golang.org/x/text v0.3.7 // indirect
-	google.golang.org/protobuf v1.28.0 // indirect
+	google.golang.org/genproto v0.0.0-20220407144326-9054f6ed7bac // indirect
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/ini.v1 v1.66.4 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect

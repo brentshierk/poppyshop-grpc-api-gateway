@@ -4,7 +4,7 @@ import (
 	"context"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"./pb"
+	"github.com/brentshierk/poppyshop-grpc-api-gateway/pkg/auth/pb"
 )
 
 type RegisterRequestBody struct{
@@ -20,7 +20,7 @@ func Register(ctx *gin.Context,c pb.AuthServiceClient){
 		return
 	}
 
-	res,err := Register(context.Background(),&pb.RegisterRequest{
+	res,err := c.Register(context.Background(),&pb.RegisterRequest{
 		Email: body.Email,
 		Password: body.Password,
 	})

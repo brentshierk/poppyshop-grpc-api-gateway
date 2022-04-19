@@ -3,7 +3,7 @@ package order
 import (
 	"github.com/brentshierk/poppyshop-grpc-api-gateway/pkg/auth"
 	"github.com/brentshierk/poppyshop-grpc-api-gateway/pkg/config"
-	"github.com/brentshierk/poppyshop-grpc-api-gateway/pkg/order/routes"
+	order "github.com/brentshierk/poppyshop-grpc-api-gateway/pkg/order/routes"
 	"github.com/gin-gonic/gin"
 )
 
@@ -20,5 +20,5 @@ func RegisterRoutes(r *gin.Engine, c *config.Config, authSvc *auth.ServiceClient
 }
 
 func (svc *ServiceClient) CreateOrder(ctx *gin.Context) {
-	routes.CreateOrder(ctx,svc.Client)
+	order.CreateOrder(ctx, svc.Client)
 }
